@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/cvest-password/static/css/main.ede215c4.css",
+    "main.css": "/cvest-password/static/css/main.fb9da347.css",
     "main.js": "/cvest-password/static/js/main.416f71d0.js",
     "static/media/pinkiepie-mlp.gif": "/cvest-password/static/media/pinkiepie-mlp.356e40c301fe1c83f3be.gif",
     "index.html": "/cvest-password/index.html",
-    "main.ede215c4.css.map": "/cvest-password/static/css/main.ede215c4.css.map",
+    "main.fb9da347.css.map": "/cvest-password/static/css/main.fb9da347.css.map",
     "main.416f71d0.js.map": "/cvest-password/static/js/main.416f71d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ede215c4.css",
+    "static/css/main.fb9da347.css",
     "static/js/main.416f71d0.js"
   ]
 }
