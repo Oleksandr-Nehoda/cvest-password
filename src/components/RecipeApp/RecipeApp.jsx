@@ -15,11 +15,13 @@ const RecipeApp = () => {
     setYear(event.target.value);
   };
 
+  const text = '1. У великій місцевості, де зібрано достатньо магічної енергії, наберіть 150мл води; 2. У магічному котлі додайте 2 гр Блакитного Місячного Пилу. Намагайтеся зберегти його ніжну синю кольорову силу. 3.  Обережно влийте 1 гр Вогняного Драконового Соку. Спостерігайте, як він додає різкість та енергію до зілля.'
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (year === '2020') {
-      setRecipe('2 яблука і слива');
+      setRecipe(text);
       setError('');
       setShowAnimation(true);
     } else {
@@ -50,7 +52,7 @@ const RecipeApp = () => {
           <img src={ponyGif} alt="Jumping Pony with Stars" className={styles.pony} />
         </animated.div>
         
-        
+
       )}
     </div>
   );
