@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styles from './RecipeApp.module.scss';
-import ponyGif from './pinkiepie-mlp.gif';
+import cryBoy from './i-want-chocolate.gif';
+import germionaGif from './harry-potter-hermione-granger.gif'
 
 const RecipeApp = () => {
   const [year, setYear] = useState('');
@@ -24,21 +25,29 @@ const RecipeApp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log('submit')
+    setError('');
+    console.log('submit222')
 
-    if (year === '2020') {
-      setRecipe(text);
-      setError('');
-      setShowAnimation(true);
-    } else {
-      setRecipe([]);
-      setError('Помилка: неправильний рік!');
-      setShowAnimation(false);
-    }
+    setTimeout(() => {
+        if (year === '2020') {
+            setRecipe(text);
+            setError('');
+            setShowAnimation(true);
+          } else {
+           
+            setRecipe([]);
+            setError('Прикро, але це НЕ правильна відповідь');
+            setShowAnimation(false);
+          }
+    }, 300)
+
   };
 
   const animationProps = useSpring({
-    to: { opacity: showAnimation ? 1 : 0, transform: showAnimation ? 'translateY(0)' : 'translateY(-100%)' },
-    from: { opacity: 0, transform: 'translateY(-100%)' },
+    to: { opacity: showAnimation ? 1 : 0, transform: showAnimation ? 'scale(1) translateY(0)' : 'scale(1.5) translateY(-100%)' },
+    from: { opacity: 0, transform: 'scale(1.5) translateY(-100%)' },
+    config: { duration: 1500, delay: 500 }
   });
 
   return (
@@ -48,7 +57,7 @@ const RecipeApp = () => {
           Введіть рік:
           <input type="text" value={year} onChange={handleInputChange} className={styles.input} />
         </label>
-        <button type="submit" className={styles.button}>Пошук</button>
+        <button type="submit" className={styles.button}>Спробувати</button>
       </form>
       {recipe.length > 0 && (
         <ul className={styles.recipe}>
@@ -57,10 +66,14 @@ const RecipeApp = () => {
           ))}
         </ul>
       )}
-      {error && <p className={styles.error}>{error}</p>}
+      {error && <>
+       <p className={styles.error}>{error}</p>
+       <img src={cryBoy} alt="Cry boy" className={styles.boy}/>
+       </>
+      }
       {showAnimation && (
         <animated.div className={styles.animation} style={animationProps}>
-          <img src={ponyGif} alt="Jumping Pony with Stars" className={styles.pony} />
+          <img src={germionaGif} alt="Jumping Pony with Stars" className={styles.pony} />
         </animated.div>
       )}
     </div>
