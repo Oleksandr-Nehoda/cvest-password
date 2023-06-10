@@ -25,9 +25,7 @@ const RecipeApp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('submit')
     setError('');
-    console.log('submit222')
 
     setTimeout(() => {
         if (year === '2020') {
@@ -52,7 +50,7 @@ const RecipeApp = () => {
 
   return (
     <div className={styles.container}>
-        {!setShowAnimation && (
+        {!showAnimation && (
             <form onSubmit={handleSubmit} className={styles.form}>
         <label className={styles.labels}>
           Введіть рік:
