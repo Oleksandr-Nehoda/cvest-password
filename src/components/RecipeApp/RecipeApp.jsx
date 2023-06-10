@@ -44,7 +44,7 @@ const RecipeApp = () => {
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
-        <label>
+        <label className={styles.labels}>
           Введіть рік:
           <input type="text" value={year} onChange={handleInputChange} className={styles.input} />
         </label>
