@@ -52,19 +52,25 @@ const RecipeApp = () => {
 
   return (
     <div className={styles.container}>
-      <form onSubmit={handleSubmit} className={styles.form}>
+        {!setShowAnimation && (
+            <form onSubmit={handleSubmit} className={styles.form}>
         <label className={styles.labels}>
           Введіть рік:
           <input type="text" value={year} onChange={handleInputChange} className={styles.input} />
         </label>
         <button type="submit" className={styles.button}>Спробувати</button>
       </form>
+        ) }
+      
       {recipe.length > 0 && (
+        <>
+        <h1 className={styles.title}>Рецепт підземель Хогвортсу</h1>
         <ul className={styles.recipe}>
           {recipe.map((step, index) => (
             <li key={index}>{step}</li>
           ))}
         </ul>
+        </>
       )}
       {error && <>
        <p className={styles.error}>{error}</p>
