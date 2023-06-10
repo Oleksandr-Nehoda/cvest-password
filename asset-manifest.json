@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cvest-password/static/css/main.b2a2c229.css",
-    "main.js": "/cvest-password/static/js/main.d6f0b66e.js",
+    "main.css": "/cvest-password/static/css/main.1510fd28.css",
+    "main.js": "/cvest-password/static/js/main.e0bea887.js",
     "static/media/i-want-chocolate.gif": "/cvest-password/static/media/i-want-chocolate.f4309dbf352d8aa594d0.gif",
     "static/media/harry-potter-hermione-granger.gif": "/cvest-password/static/media/harry-potter-hermione-granger.0e339a4d6227f350550e.gif",
     "index.html": "/cvest-password/index.html",
-    "main.b2a2c229.css.map": "/cvest-password/static/css/main.b2a2c229.css.map",
-    "main.d6f0b66e.js.map": "/cvest-password/static/js/main.d6f0b66e.js.map"
+    "main.1510fd28.css.map": "/cvest-password/static/css/main.1510fd28.css.map",
+    "main.e0bea887.js.map": "/cvest-password/static/js/main.e0bea887.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2a2c229.css",
-    "static/js/main.d6f0b66e.js"
+    "static/css/main.1510fd28.css",
+    "static/js/main.e0bea887.js"
   ]
 }
