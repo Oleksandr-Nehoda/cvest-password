@@ -50,6 +50,7 @@ const RecipeApp = () => {
           <img src={ponyGif} alt="Jumping Pony with Stars" className={styles.pony} />
         </animated.div>
         
+        
       )}
     </div>
   );
