@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cvest-password/static/css/main.9dc3a64f.css",
-    "main.js": "/cvest-password/static/js/main.78dae5f0.js",
+    "main.js": "/cvest-password/static/js/main.ff689f6f.js",
     "static/media/i-want-chocolate.gif": "/cvest-password/static/media/i-want-chocolate.f4309dbf352d8aa594d0.gif",
     "static/media/harry-potter-hermione-granger.gif": "/cvest-password/static/media/harry-potter-hermione-granger.0e339a4d6227f350550e.gif",
     "index.html": "/cvest-password/index.html",
     "main.9dc3a64f.css.map": "/cvest-password/static/css/main.9dc3a64f.css.map",
-    "main.78dae5f0.js.map": "/cvest-password/static/js/main.78dae5f0.js.map"
+    "main.ff689f6f.js.map": "/cvest-password/static/js/main.ff689f6f.js.map"
   },
   "entrypoints": [
     "static/css/main.9dc3a64f.css",
-    "static/js/main.78dae5f0.js"
+    "static/js/main.ff689f6f.js"
   ]
 }
